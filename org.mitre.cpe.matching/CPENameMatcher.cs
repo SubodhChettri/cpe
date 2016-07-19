@@ -27,6 +27,9 @@ public class CPENameMatcher {
      */
     public Boolean isDisjoint(WellFormedName source, WellFormedName target) {
         // if any pairwise comparison is disjoint, the names are disjoint.
+
+
+
         Hashtable result_list = compareWFNs(source, target);
         foreach (Object result in  result_list.Values) {
             if (result.Equals(Relation.DISJOINT)) {
